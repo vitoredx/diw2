@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tela de Produtos</title>
+  <style>
+     .product-image {
+      max-width: 500px;
+    }  
+    .navbar-custom {
+      background-color: #675b5b35;
+      margin-top: -60px;
+    border-bottom: 1px solid #ddd;
+    }
+
+    .card {
+      height: 100%;
+    }
+
+    .foooter {
+      background-color: #675b5b35;
+       padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    body {
+      padding-top: 60px;
+      background-color: #675b5b35;
+    }
+    main {
+      background-color: #675b5b35;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Minha Loja</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" id="filter-input" class="form-control me-2" placeholder="Filtrar por palavra-chave">
+          <button id="filter-button" class="btn btn-primary" type="button">Filtrar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <div class="container">
+      <h1>Detalhes do Produto</h1>
+      <div id="product-details"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid mt-3 foooter">
+      <div class="row bs-primary-rgb m-2 rounded p-2">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-center text-dark">Métodos de Pagamento</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center text-dark fs-5">
+                    <i class="bi bi-credit-card"></i>
+                    <i class="bi bi-cash"></i>
+                    <i class="bi bi-currency-bitcoin"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-center text-dark">Links Rápidos</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center text-dark"><a href="#"><i class="bi bi-house-door"></i> Início</a></p>
+                  <p class="text-center text-dark"><a href="#"><i class="bi bi-question-circle"></i> Ajuda</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-center text-dark">Redes Sociais</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center text-dark fs-5">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-linkedin"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-center text-dark">Contatos</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-dark"><i class="bi bi-envelope"></i> contato@stillstyled.com</p>
+                  <p class="text-dark"><i class="bi bi-telephone"></i> 0800-31-1234</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col text-center">
+              <p class="text-center text-dark">Aluno: Vitor Emanuel Dias Xavier</p>
+              <p class="text-center text-dark">Curso: Análise e Desenvolvimento de Sistemas</p>
+              <p class="text-center text-dark">Matrícula: 802881</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adicione quaisquer scripts adicionais que você possa precisar aqui -->
+  <script src="product.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
